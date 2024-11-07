@@ -27,7 +27,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
           Column(
             children: [
               Image.asset(image,height: 500,fit: BoxFit.cover,),
-              product.availability? Positioned(
+              !product.availability? Positioned(
                 bottom: 0,
                 child: Container(
                   alignment: Alignment.center,
